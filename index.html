@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <!-- Profil Perusahaan -->
+ <section id="profile" class="hidden">
+    <h2>PT. Sinar Mas Jaya</h2>
+    <p>PT. Sinar Mas Jaya adalah perusahaan yang bergerak di bidang penelitian tenaga dalam. Didirikan dengan komitmen untuk mengembangkan dan memajukan pemahaman serta aplikasi tenaga dalam, kami berfokus pada inovasi, penelitian ilmiah, dan penerapan teknologi terbaru dalam bidang ini.</p>
+    
+    <h3>Visi Kami</h3>
+    <p>Menjadi pemimpin global dalam penelitian dan pengembangan tenaga dalam, menyediakan solusi inovatif yang berdampak positif pada kesejahteraan manusia dan lingkungan.</p>
+    
+    <h3>Misi Kami</h3>
+    <ul>
+        <li>Melakukan penelitian berkualitas tinggi dalam bidang tenaga dalam untuk mengembangkan pengetahuan dan teknologi baru.</li>
+        <li>Menyediakan layanan konsultasi dan pelatihan yang membantu individu dan organisasi dalam mengaplikasikan tenaga dalam secara efektif.</li>
+        <li>Membangun kemitraan strategis dengan institusi penelitian, akademisi, dan industri untuk memperluas jangkauan dan dampak penelitian kami.</li>
+        <li>Menjaga standar etika dan profesionalisme tertinggi dalam setiap aspek operasi kami.</li>
+        <li>Mendorong inovasi berkelanjutan dengan investasi dalam teknologi dan sumber daya manusia.</li>
+    </ul>
+    <h3>Contact Person</h3>
+    Email:aqjenius@gmail.com<br>whatsapp:0878-5911-4030
+    <a href="index.html">Back</a>
+</section>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#fasilitas">Fasilitas</a></li>
+                <li><a href="#message_us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1 class="title">Para PEMENANG</h1>
+    </section>
+
+
+
+    <!-- Fasilitas -->
+    <section id="fasilitas" class="fasilitas">
+        <h2>Fasilitas</h2>
+        <div class="gambar-elips">
+            <div class="gambar">
+                <img src="assets/gambar1.jpeg" alt="Gambar 1">
+                <p>Laboratorium IT</p>
+            </div>
+            <div class="gambar">
+                <img src="assets/gambar2.jpeg" alt="Gambar 2">
+                <p>Laboratorium Robotika</p>
+            </div>
+            <div class="gambar">
+                <img src="assets/gambar3.jpeg" alt="Gambar 3">
+                <p>Laboratorium Tenaga Dalam</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section id="message_us" class="form">
+        <form>
+            <h2>Hubungi Kami</h2>
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="tgl_lahir">Tanggal Lahir:</label>
+                <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin:</label>
+                <div class="radio-group">
+                    <input type="radio" id="laki" name="gender" value="laki-laki">
+                    <label for="laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="gender" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pesan">Kotak Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <div id="formInfo" class="formInfo">
+            <h3>Informasi Formulir</h3>
+            <p id="tanggalHariIni"></p>
+            <p id="namaInfo"></p>
+            <p id="tanggalLahir"></p>
+            <p id="jenisKelamin"></p>
+            <p id="pesanInfo"></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        abdulqadir - 2024
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>
